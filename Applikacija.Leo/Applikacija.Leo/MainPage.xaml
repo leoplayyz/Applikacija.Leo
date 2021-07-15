@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Applikacija.Leo.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Leon's проект" 
+           HorizontalOptions="Center"
+           TextColor="#ecf0f1"
+           BackgroundColor="#2c3e50"
+           Padding="15, 10, 0, 10"
+           FontAttributes="Bold" 
+           FontSize="Header" />
+        <Label Text="Најавете се" 
+           FontSize="Large"
+           TextColor="#2c3e50"
+           FontAttributes="Bold"
+           Margin="0, 10, 0, 0"
+           HorizontalTextAlignment="Center" />
+        <Entry x:Name="entUsername"
+           Placeholder="Корисничко име"
+           FontAttributes="Bold" 
+           FontSize="Large" 
+           Scale="0.85" />
+        <Entry x:Name="entPassword" 
+           Placeholder="Лозинка" 
+           IsPassword="True" 
+           FontAttributes="Bold" 
+           FontSize="Large" 
+           Scale="0.85" />
+        <Button Text="Најава" 
+           FontSize="Large" 
+           BackgroundColor="#2c3e50" 
+           TextColor="#ecf0f1" 
+           FontAttributes="Bold" 
+           Scale="0.85" 
+           Clicked="Button_Clicked" />
+    </StackLayout>
+
+</ContentPage>
